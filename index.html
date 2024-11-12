@@ -1,62 +1,112 @@
-  <!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Dados Escolares</title>
+    <title>Fredy Página Estática</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f4f4f9;
         }
         header {
-            background: #007bff;
-            color: #fff;
-            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
             text-align: center;
         }
         section {
-            background: #fff;
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
             margin-top: 20px;
         }
-        h1 {
-            margin: 0;
+        table, th, td {
+            border: 1px solid #ddd;
         }
-        .info {
-            margin: 10px 0;
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Bem-vindo à minha Página Estática!</h1>
+    </header>
 
-<header>
-    <h1>Meus Dados Escolares</h1>
-</header>
+    <section>
+        <h2>Sobre mim</h2>
+        <p>Olá! Eu sou Fredy Pedro aluno do prof Marcial Mbango, eu sou um gestor informatico. Está é a minha página estática.</p>
 
-<section>
-    <div class="info">
-        <strong>Nome:</strong> Fredy Andre Pedro Mucoco
-    </div>
-    <div class="info">
-        <strong>Escola:</strong>  Instituto médio comercial de luanda
-    </div>
-    <div class="info">
-        <strong>Curso:</strong> Informática de gestão
-    </div>
-    <div class="info">
-        <strong>Ano:</strong> 2024
-    </div>
-    <div class="info">
-        <strong>Matéria:</strong> TLP
-    </div>
-</section>
+        <!-- Links solicitados -->
+        <h3>Links úteis:</h3>
+        <ul>
+            <li><a href="mucoco111@gmail.com">Enviar email para imcltpl@e-mail.com</a></li>
+            <li><a href="PAGS/informações sobre a escola.pdf" download>Baixar informações da escola (PDF)</a></li>
+            <li><a href="tel:+244 927 800 505">Ligar para a escola</a></li>
+            <li><a href="https://wa.me/244929724711">Enviar SMS pelo WhatsApp</a></li>
+        </ul>
 
+        <!-- Tabela com dados -->
+        <h3>Lista de Alunos</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>E-mail</th>
+                    <th>Curso</th>
+                    <th>Turno</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fredy Pedro</td>
+                    <td>(244) 929-724-711</td>
+                    <td>mucoco111@gmail.com</td>
+                    <td>Informática</td>
+                    <td>Noite</td>
+                </tr>
+                <tr>
+                    <td>Alexandre Adula</td>
+                    <td>(244) 972-687-074</td>
+                    <td>alexandreadula@gmail.com</td>
+                    <td>gestor informatico</td>
+                    <td>Noite</td>
+                </tr>
+                <tr>
+                    <td>Simone Zua</td>
+                    <td>(244) 924-222-612</td>
+                    <td>simonezu@gmail.com.com</td>
+                    <td>gestor informatico</td>
+                    <td>Noite</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fredy Pedro</p>
+    </footer>
 </body>
 </html>
 
-
+           
