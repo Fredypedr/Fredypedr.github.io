@@ -1,66 +1,230 @@
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dia dos Namorados</title>
+    <title>Instituto Médio Comercial de Luanda</title>
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="Css/Bootstrap.css">
+    <script src="Js/jquery.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
         body {
-            font-family: 'Dancing Script', cursive;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
             text-align: center;
-            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
-            color: #fff;
             padding: 20px;
         }
-        h1 {
-            font-size: 3em;
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        h1, h2 {
+            color: #003366;
+        }
+
+        form label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        form input {
+            display: block;
             margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
-        img {
+            padding: 5px;
             width: 100%;
-            max-width: 500px;
-            border-radius: 15px;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-            margin-bottom: 20px;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
         }
-        .floating-hearts {
-            position: fixed;
+
+        form button {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        form button:hover {
+            background-color: #0055a5;
+        }
+
+        table {
             width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            background: url('https://i.gifer.com/7efs.gif');
-            opacity: 0.3;
-        }
-        .music {
+            border-collapse: collapse;
             margin-top: 20px;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #003366;
+            color: white;
+        }
+
+        ol, ul {
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+
+        ol li, ul li {
+            color: #333;
         }
     </style>
 </head>
+
 <body>
-    <div class="floating-hearts"></div>
-    <div class="container">
-        <h1>Feliz Dia dos Namorados! ❤️</h1>
-        <p>O amor é a flor mais bela que nasce em nossos corações. Que este dia seja cheio de carinho, paixão e felicidade.</p>
-        <img src="https://source.unsplash.com/500x300/?flower,romantic" alt="Flores românticas">
-        <p>"O amor verdadeiro é aquele que floresce nos pequenos gestos."</p>
-        <img src="https://source.unsplash.com/500x300/?roses,heart" alt="Rosas vermelhas">
-        <p>Que o nosso amor cresça e floresça todos os dias. Te amo! ❤️</p>
-        <div class="music">
-            <audio controls autoplay loop>
-                <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
-                Seu navegador não suporta o elemento de áudio.
-            </audio>
-        </div>
-    </div>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Bem-vindo ao Instituto Médio Comercial de Luanda</h1>
+        <img src="Imagens/fredy_pedro.jpg" alt="fredy_pedro.jpg" width="960" height="auto">
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Formulário com Dados Pessoais -->
+        <section>
+            <h2>Formulário de Dados Pessoais</h2>
+            <form action="#">
+                <div>
+                    <label for="nome">Fredy Andre Pedro Mucoco:</label>
+                    <input type="text" id="nome" placeholder="Seus dados" required>
+                </div>
+                <div>
+                    <label for="email">mucoco111@gmail.com:</label>
+                    <input type="email" id="email" placeholder="Seus dados" required>
+                </div>
+                <div>
+                    <label for="data_nascimento">5 de Abril de 2002:</label>
+                    <input type="date" id="data_nascimento" placeholder="Seus dados" required>
+                </div>
+                <div>
+                    <label for="telefone">929724711:</label>
+                    <input type="tel" id="telefone" placeholder="Seus dados" required>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Tabela com Dados de Alunos -->
+        <section>
+            <h2>Dados dos Alunos</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Data de Nascimento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alexandre Adula</td>
+                        <td>alexandre@email.com</td>
+                        <td>(+244) 972687073</td>
+                        <td>01/06/2000</td>
+                    </tr>
+                    <tr>
+                        <td>Alvaro de Castro</td>
+                        <td>alvaro2@email.com</td>
+                        <td>(+244) 940530934</td>
+                        <td>02/02/2001</td>
+                    </tr>
+                    <tr>
+                        <td>Belmiro Bambi</td>
+                        <td>belmi@email.com</td>
+                        <td>(+244) 936922358</td>
+                        <td>03/03/2002</td>
+                    </tr>
+                    <tr>
+                        <td>Dumilde Fernando</td>
+                        <td>fernando@email.com</td>
+                        <td>(+244) 947545130</td>
+                        <td>04/04/2002</td>
+                    </tr>
+                    <tr>
+                        <td>Emanuel Cabolo</td>
+                        <td>emanu@email.com</td>
+                        <td>(+244) 943943532</td>
+                        <td>05/05/2001</td>
+                    </tr>
+                    <tr>
+                        <td>Fernandes Junior</td>
+                        <td>junior6@email.com</td>
+                        <td>(+244) 956876439</td>
+                        <td>06/06/2001</td>
+                    </tr>
+                    <tr>
+                        <td>Fernando Coxe</td>
+                        <td>fernando11@email.com</td>
+                        <td>(+244) 992654835</td>
+                        <td>07/07/2000</td>
+                    </tr>
+                    <tr>
+                        <td>Fernando Gorje</td>
+                        <td>jfernando@email.com</td>
+                        <td>(+244) 958413546</td>
+                        <td>08/08/2002</td>
+                    </tr>
+                    <tr>
+                        <td>Fredy Andre</td>
+                        <td>mucoco111@email.com</td>
+                        <td>(+244) 929724711</td>
+                        <td>05/04/2002</td>
+                    </tr>
+                    <tr>
+                        <td>Guilheirmino Jose</td>
+                        <td>jose10@email.com</td>
+                        <td>(+244) 944011039</td>
+                        <td>10/10/2001</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Cursos Lecionados na COMERCIAL -->
+        <section>
+            <h2>Cursos Lecionados na COMERCIAL</h2>
+            <ol>
+                <li>Curso de Contabilidade</li>
+                <li>Curso de Recursos Humanos</li>
+                <li>Curso de Informática de Gestão</li>
+            </ol>
+        </section>
+
+        <!-- Disciplinas do Curso de Informática de Gestão -->
+        <section>
+            <h2>Disciplinas do Curso de Informática de Gestão</h2>
+            <ul>
+                <li>Programação</li>
+                <li>Banco de Dados</li>
+                <li>Redes de Computadores</li>
+                <li>Gestão de Projetos de TI</li>
+            </ul>
+        </section>
+    </main>
 </body>
+
 </html>
+ 
+
+ 
